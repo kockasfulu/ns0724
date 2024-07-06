@@ -1,6 +1,6 @@
 # Tool Rental Application
 
-This repository contains a tool rental application built for a software engineering interview process. The application simulates a store similar to Home Depot where users can rent tools.
+This repository contains a tool rental application. The application simulates a store similar to Home Depot where users can rent tools.
 
 ## Features
 
