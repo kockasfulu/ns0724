@@ -31,11 +31,11 @@ To get a local copy up and running, follow these steps:
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/your/repository.git
+   git clone [https://github.com/your/repository.git](https://github.com/kockasfulu/ns0724)
    ```
 2. Navigate into the project directory:
    ```sh
-   cd tooltrek-api
+   cd ns-0724
    ```
    
 ### Environments
