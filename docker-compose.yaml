@@ -1,0 +1,30 @@
+services:
+
+  ### tooltrek-db Container
+  tooltrek-db:
+    build:
+      context: .
+      dockerfile: tooltrek-db.dockerfile
+      args:
+        - MYSQL_DATABASE=${MYSQL_DATABASE}
+        - MYSQL_USER=${MYSQL_USER}
+        - MYSQL_PASSWORD=${MYSQL_PASSWORD}
+        - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
+    container_name: tooltrek-db
+    ports:
+      - "${MYSQL_PORT}:3306"
+
+  ### tooltrek-db-test Container
+  tooltrek-db-test:
+    build:
+      context: .
+      dockerfile: tooltrek-db.dockerfile
+      args:
+        - MYSQL_DATABASE=${MYSQL_DATABASE}
+        - MYSQL_USER=${MYSQL_USER}
+        - MYSQL_PASSWORD=${MYSQL_PASSWORD}
+        - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
+    container_name: tooltrek-db-test
+    ports:
+      - "${MYSQL_PORT}:3306"
+
